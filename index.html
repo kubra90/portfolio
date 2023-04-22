@@ -67,8 +67,67 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Glass Recycling App</h3>
                             <!-- <div class="subheading mb-3">Intelitec Solutions</div> -->
-                            <p>This app streamlines the glass recycling process, allowing users to easily register and schedule pickups. An admin and driver login, along with Google Routes API, ensure that pickups are assigned to the most efficient routes. Built using Java, Spring, PostgreSQL, HTML, CSS, and Javascript with the Vue.js framework.</p>
-                            <a class="social-icon" href="https://github.com/kubra90/glass-recycling-app"><i class="fab fa-github"></i></a>
+                            <p>This app streamlines the glass recycling process, allowing users to easily register and schedule pickups. An admin and driver login, along with Google Routes API, ensure that pickups are assigned to the most efficient routes. Built using Java, Spring, PostgreSQL, HTML, CSS, and Javascript with the Vue.js framework. For more details, see my github page.
+                                <a class="social-icon" href="https://github.com/kubra90/glass-recycling-app"><i class="fab fa-github"></i></a>
+                            </p>
+                            
+                            <!-- <a href="" onclick="window.open('assets/img/GlassRecyclingApp.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;"><i class="fas fa-image"></i></a>  -->
+                            <!-- this is updated part later -->
+                            <img id="myImg" src="assets/img/GlassRecyclingApp.png" alt="Glass Recycling App" style="width:100%;max-width:300px">
+                            <img id="myImg1" src="assets/img/GlassRecycling.png" alt="Glass Recycling" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+// this is for second image
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg1");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">February 2023</span></div>
                     </div>
